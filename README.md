@@ -1,2 +1,2 @@
 # tlate
-Template literals as template engine
+Template Literals As Template Engine
