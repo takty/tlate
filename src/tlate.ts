@@ -22,7 +22,7 @@ export default function t(ss: string[], ...vs: any[]): string {
 		if (typeof v === 'function') {
 			v = v();
 			if (Array.isArray(v)) {
-				if ((v?.[0].includes('\n') ?? false) && _.length) {
+				if ((v?.[0]?.includes('\n') ?? false) && _.length) {
 					s = s.slice(0, - _.length);  // '\n___$ -> '\n$
 					_ = '';
 				}
